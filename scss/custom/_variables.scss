@@ -1,0 +1,71 @@
+$az-height-base: 40px;
+$az-height-header: 64px;
+$az-height-header-mobile: 60px;
+$az-height-navbar: 48px;
+$az-height-navbar-compact: 42px;
+$az-height-footer: 40px;
+$az-height-content: calc(100vh - #{$az-height-header + $az-height-footer});
+
+$az-width-sidebar: 100%;
+$az-width-iconbar-aside: 230px;
+
+$az-border-color: rgba($gray-900, .2);
+$az-border-base: #dee2ef;
+
+$ckbox-size: 16px;
+$rdiobox-size: 16px;
+
+$az-color-primary: #006e52;
+$az-color-secondary: #d5e806;
+$az-color-headline: #031b4e;
+$az-color-text: #4e5f83;
+
+$font-size-sm: 13px;
+$font-size-md: $font-size-base+0.0625;
+$font-weight: 500;
+
+$input-btn-focus-color: rgba($az-color-primary, .25);
+
+// Paths
+$maven-400: 'maven_proregular',
+sans-serif;
+$maven-600: 'maven_promedium',
+sans-serif;
+$maven-800: 'maven_probold',
+sans-serif;
+$maven-900: 'maven_problack',
+sans-serif;
+
+// Colors
+$colors: (primary-color: #006e52,
+    accent-color: #d5e806);
+
+$menu-top-height: 58px;
+$menu-side-width: 240px;
+$menu-side-min-width: 20px;
+
+$primary-bg: #FFFFFF;
+$primary-color: #006e52;
+$primary-color-10: #006e5212;
+$primary-color-5: #006e520a;
+$accent-color: #d5e806;
+$accent-color-10: #d5e80615;
+
+$accent-color-110: #cddf06;
+
+$red: #DC3545;
+
+$small-font-size: 10pt;
+$normal-font-size: 12pt;
+$medium-font-size: 20pt;
+
+
+$unit-movement: 5px;
+$grey-70: #333333;
+$grey-60: #444444;
+$grey-50: #555555;
+$grey-20: #9a9a9a;
+$white: #FFFFFF;
+$menu-txt: 11pt;
+
+$_9mobile-lt-grey:rgb(245, 246, 245);

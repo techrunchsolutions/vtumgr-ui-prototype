@@ -1,0 +1,14 @@
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #1B7D64 !important;
+    color: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #D6E806 !important;
+    color: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    background-color: #1B7D64 !important;
+    color: white !important
+}

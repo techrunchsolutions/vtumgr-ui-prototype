@@ -1,0 +1,66 @@
+.pre-loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    overflow: hidden;
+
+    & .blob {
+        position: absolute;
+        fill: #038c3e29;
+        width: 80px;
+        z-index: -1;
+        animation: move 10s ease infinite;
+        transform-origin: 50% 50%;
+
+    }
+
+    & img {
+        height: 100px;
+    }
+
+    & .progress {
+        width: 150px;
+        margin-top: 30px;
+        border-radius: 2px;
+        height: 3px;
+        background-color: #cdd4e0;
+
+        & .inner-bar {
+            height: 100%;
+            width: 10%;
+            background-color: #D5E806;
+        }
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1) translate(5px, -10px);
+    }
+
+    38% {
+        transform: scale(0.8, 1) translate(7px, 0px) rotate(160deg);
+    }
+
+    40% {
+        transform: scale(0.8, 1) translate(7px, 0px) rotate(160deg);
+    }
+
+    78% {
+        transform: scale(1.3) translate(5px, -10px) rotate(-20deg);
+    }
+
+    80% {
+        transform: scale(1.3) translate(5px, -10px) rotate(-20deg);
+    }
+
+    100% {
+        transform: scale(1) translate(5px, -10px);
+    }
+}
