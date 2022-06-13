@@ -670,6 +670,31 @@ mark,
     max-width: 100%;
     height: auto
 }
+.imgg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(66, 180, 66);
+}
+.member-det{
+    border: 2px solid rgb(250, 250, 250);
+}
+.pd-r{
+    padding-left: 20px;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+}
+.member-tab{
+    border-bottom: 1px solid rgb(196, 193, 193);
+}
+.btn-text{
+    font-size: 12px;
+}
+.nav-item:active{
+    border-bottom:1px #002219;
+}
 
 .figure {
     display: inline-block
@@ -3544,6 +3569,11 @@ textarea.custom-file-input.parsley-error:focus~.custom-file-label {
 a.btn.disabled,
 fieldset:disabled a.btn {
     pointer-events: none
+}
+.btn-primaryy {
+    color: #fff;
+    background-color: #042aa7;
+    border-color: #042aa7;
 }
 
 .btn-primary {
