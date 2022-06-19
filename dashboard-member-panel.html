@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Chams Switch Portal">
+    <meta name="author" content="conclavedave for Bluechip Technologies">
+
+    <title>Chams Switch Portal</title>
+
+    <link rel="shortcut icon" href="./img/Favicon.jpeg" type="image/x-icon">
+    <!-- vendor css -->
+    <link href="./lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="./lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="./lib/owl/owl.carousel.min.css" rel="stylesheet">
+    <link href="./lib/owl/owl.theme.default.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/portal-theme.min.css">
+
+    <style>
+        .card-dashboard-progress .progress-legend #sub-dealer-tag::before {
+            background-color: #025951;
+        }
+
+        .card-dashboard-progress .progress-legend #retailer-tag::before {
+            background-color: #038C3E;
+        }
+
+        .card-dashboard-progress .progress-legend #trade-agent-tag::before {
+            background-color: #cddf06;
+        }
+
+        .card-dashboard-progress .progress-legend #quantity-tag::before {
+            background-color: #025951;
+        }
+
+        .card-dashboard-progress .progress-legend #incentive-tag::before {
+            background-color: #cddf06;
+        }
+    </style>
+</head>
+
+<body class="az-body">
+
+
+    <!-- Start Top Nav -->
+    <div class="top-nav">
+        <nav class="navbar navbar-expand-sm ">
+
+            <!-- Module Switcher to External Modules -->
+            <div class="module-switcher ext navbar-btn-rounded">
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="top-nav-icon-btn"
+                        role="presentation">
+                        <path fill-rule="evenodd"
+                            d="M4 5.01C4 4.451 4.443 4 5.01 4h1.98C7.549 4 8 4.443 8 5.01v1.98C8 7.549 7.557 8 6.99 8H5.01C4.451 8 4 7.557 4 6.99V5.01zm0 6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98C8 13.549 7.557 14 6.99 14H5.01C4.451 14 4 13.557 4 12.99v-1.98zm6-6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98C14 7.549 13.557 8 12.99 8h-1.98C10.451 8 10 7.557 10 6.99V5.01zm0 6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98zm6-6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98C20 7.549 19.557 8 18.99 8h-1.98C16.451 8 16 7.557 16 6.99V5.01zm0 6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98zm-12 6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98C8 19.549 7.557 20 6.99 20H5.01C4.451 20 4 19.557 4 18.99v-1.98zm6 0c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98zm6 0c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98z">
+                        </path>
+                    </svg>
+                </span>
+            </div>
+            <!-- End Module Switcher -->
+
+            <!-- Navbar Logo -->
+            <a class="navbar-brand ml-2 mr-3" href="#">
+                <div class="top-nav-hover brand">
+                    <img src="./img/logo-chams-1.jpeg" height="22px" />
+                </div>
+            </a>
+            <!-- End Navbar Logo -->
+
+            <!-- Start Navbar Links and Actions -->
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <!-- Start Module Menu -->
+                <div class="module-menu ml-1 mr-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav">
+
+
+                        <!-- Link to view all Modules -->
+                        <!-- <li class="nav-item">
+              <div class="top-nav-hover full-btn">
+                <a class="nav-link" href="#">View All</a>
+              </div>
+            </li> -->
+                        <!-- Link to stop view  -->
+                    </ul>
+                </div>
+                <!-- End Module Menu  -->
+
+                <!-- Search Area  -->
+                <div class="search-area">
+                    <form class="form-inline my-2 my-lg-0 top-nav-search">
+                        <span class="search-icon d-flex" default="" tabindex="0">
+                            <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7 12C4.23858 12 2 9.76142 2 7C2 4.23858 4.23858 2 7 2C9.76142 2 12 4.23858 12 7C12 8.15126 11.6109 9.21164 10.9571 10.0568L13.5846 12.7302C13.8427 12.9928 13.839 13.4149 13.5764 13.673C13.3139 13.9311 12.8918 13.9274 12.6337 13.6648L10.0086 10.9939C9.17144 11.6255 8.12945 12 7 12ZM10.6667 7C10.6667 9.02504 9.02504 10.6667 7 10.6667C4.97496 10.6667 3.33333 9.02504 3.33333 7C3.33333 4.97496 4.97496 3.33333 7 3.33333C9.02504 3.33333 10.6667 4.97496 10.6667 7Z"
+                                    fill="currentColor"></path>
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="12"
+                                    height="12">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 12C4.23858 12 2 9.76142 2 7C2 4.23858 4.23858 2 7 2C9.76142 2 12 4.23858 12 7C12 8.15126 11.6109 9.21164 10.9571 10.0568L13.5846 12.7302C13.8427 12.9928 13.839 13.4149 13.5764 13.673C13.3139 13.9311 12.8918 13.9274 12.6337 13.6648L10.0086 10.9939C9.17144 11.6255 8.12945 12 7 12ZM10.6667 7C10.6667 9.02504 9.02504 10.6667 7 10.6667C4.97496 10.6667 3.33333 9.02504 3.33333 7C3.33333 4.97496 4.97496 3.33333 7 3.33333C9.02504 3.33333 10.6667 4.97496 10.6667 7Z">
+                                    </path>
+                                    </path>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16H16V0H0V16Z"></path>
+                                </g>
+                            </svg>
+                        </span>
+
+                        <input class="search-box" type="text" placeholder="Search">
+                    </form>
+                </div>
+                <!-- End Search  -->
+
+                <!-- Start Action Buttons  -->
+                <div class="top-nav-buttons">
+                    <div class="navbar-btn-rounded">
+                        <div id="notificationIcon" class="notification present d-flex dropdown">
+
+                            <svg class="top-nav-icon-btn" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <!--! Font Awesome Pro 6.0.0-alpha3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                <path
+                                    d="M223.1 512C259.4 512 288 483.4 288 448H160C160 483.4 188.6 512 223.1 512zM439.4 362.3c-19.25-20.75-55.5-52-55.5-154.3c0-77.75-54.38-139.9-127.9-155.1V32c0-17.62-14.38-32-32-32S192 14.38 192 32v20.88C118.5 68.13 64.13 130.3 64.13 208c0 102.3-36.25 133.5-55.5 154.3C2.625 368.8 0 376.5 0 384c.125 16.38 13 32 32.13 32h383.8c19.12 0 32-15.62 32.13-32C448 376.5 445.4 368.8 439.4 362.3z" />
+                            </svg>
+                            <div class="dropdown-menu">
+                                <div class="az-dropdown-header mg-b-20 d-sm-none">
+                                    <a href="" class="az-header-arrow"><i class="icon ion-md-arrow-back"></i></a>
+                                </div>
+                                <h6 class="az-notification-title">Notifications</h6>
+                                <p class="az-notification-text">You have 2 unread notification</p>
+                                <div class="az-notification-list">
+                                    <div class="media new">
+                                        <div class="az-img-user"><img src="https://via.placeholder.com/500" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <p>New sales order from <strong>Chidi Godwin</strong> for
+                                                <strong>N20,000</strong>
+                                            </p>
+                                            <span>Sep 28 12:32pm</span>
+                                        </div><!-- media-body -->
+                                    </div><!-- media -->
+                                    <div class="media new">
+                                        <div class="az-img-user online"><img src="https://via.placeholder.com/500"
+                                                alt=""></div>
+                                        <div class="media-body">
+                                            <p>Your purchase order for <strong>NGN 120,000</strong> of EVC units has
+                                                been successfully
+                                                executed
+                                            </p>
+                                            <span>Sep 27 04:16am</span>
+                                        </div><!-- media-body -->
+                                    </div><!-- media -->
+                                </div><!-- az-notification-list -->
+                                <div class="dropdown-footer"><a href="">View All Notifications</a></div>
+                            </div><!-- dropdown-menu -->
+                        </div>
+                    </div>
+                    <!-- <div class="navbar-btn-rounded">
+            <span id="settingsIcon" class="d-flex">
+              <svg class="top-nav-icon-btn" width="24" height="24" viewBox="0 0 24 24" focusable="false"
+                role="presentation">
+                <path
+                  d="M11.701 16.7a5.002 5.002 0 1 1 0-10.003 5.002 5.002 0 0 1 0 10.004m8.368-3.117a1.995 1.995 0 0 1-1.346-1.885c0-.876.563-1.613 1.345-1.885a.48.48 0 0 0 .315-.574 8.947 8.947 0 0 0-.836-1.993.477.477 0 0 0-.598-.195 2.04 2.04 0 0 1-1.29.08 1.988 1.988 0 0 1-1.404-1.395 2.04 2.04 0 0 1 .076-1.297.478.478 0 0 0-.196-.597 8.98 8.98 0 0 0-1.975-.826.479.479 0 0 0-.574.314 1.995 1.995 0 0 1-1.885 1.346 1.994 1.994 0 0 1-1.884-1.345.482.482 0 0 0-.575-.315c-.708.2-1.379.485-2.004.842a.47.47 0 0 0-.198.582A2.002 2.002 0 0 1 4.445 7.06a.478.478 0 0 0-.595.196 8.946 8.946 0 0 0-.833 1.994.48.48 0 0 0 .308.572 1.995 1.995 0 0 1 1.323 1.877c0 .867-.552 1.599-1.324 1.877a.479.479 0 0 0-.308.57 8.99 8.99 0 0 0 .723 1.79.477.477 0 0 0 .624.194c.595-.273 1.343-.264 2.104.238.117.077.225.185.302.3.527.8.512 1.58.198 2.188a.473.473 0 0 0 .168.628 8.946 8.946 0 0 0 2.11.897.474.474 0 0 0 .57-.313 1.995 1.995 0 0 1 1.886-1.353c.878 0 1.618.567 1.887 1.353a.475.475 0 0 0 .57.313 8.964 8.964 0 0 0 2.084-.883.473.473 0 0 0 .167-.631c-.318-.608-.337-1.393.191-2.195.077-.116.185-.225.302-.302.772-.511 1.527-.513 2.125-.23a.477.477 0 0 0 .628-.19 8.925 8.925 0 0 0 .728-1.793.478.478 0 0 0-.314-.573"
+                  fill-rule="evenodd"></path>
+              </svg>
+            </span>
+          </div> -->
+                    <div class="navbar-btn-rounded">
+                        <div id="profileIcon" class="d-flex dropdown profile-icon">
+                            <img class="profile-img " src="./img/user.jpg" />
+
+
+                            <div class="dropdown-menu">
+                                <div class="az-dropdown-header d-sm-none">
+                                    <a href="" class="az-header-arrow"><i class="icon ion-md-arrow-back"></i></a>
+                                </div>
+                                <div class="az-header-profile">
+                                    <div class="az-img-user">
+                                        <img src="./img/user.jpg" alt="">
+                                    </div><!-- az-img-user -->
+                                    <h6>Lanre Lugard</h6>
+                                    <span>Administration</span>
+                                    <span>Last Login 22/04/2022 17:20</span>
+                                </div><!-- az-header-profile -->
+
+                                <a href="" class="dropdown-item"><i class="fa fa-user"></i> My Profile</a>
+                                <a href="" class="dropdown-item"><i class="fa fa-edit"></i> Edit Profile</a>
+                                <a href="" class="dropdown-item"><i class="fa fa-clock"></i> Activity Logs</a>
+                                <a href="signin.html" class="dropdown-item"><i class="fa fa-power-off"></i> Sign
+                                    Out</a>
+                            </div><!-- dropdown-menu -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Action Buttons  -->
+            </div>
+            <!-- End Navbar Links and Actions -->
+        </nav>
+    </div>
+    <!-- End Top Nav -->
+
+    <!-- Start Main Area -->
+    <div class="wrapper">
+        <!-- Side Menu  -->
+        <aside id="resizable" class="sidebar-left movable-div position-fixed animated attached">
+            <div id="sideNav" class="side-nav tx-montserrat">
+
+                <div class="az-sidebar">
+
+                    <div class="module-title">
+                        <div class="side-menu-item">
+                            <div class="icon-area">
+                                <img src="https://via.placeholder.com/500" alt="cp">
+                            </div>
+                            <div class="menu-text">
+                                <span class="module-name">Admin</span>
+                                <span class="module-desc">Lanre Lugard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="az-sidebar-body">
+                        <ul class="nav">
+                            <li class="nav-item active">
+                                <div class="top-nav-hover">
+                                    <a class="nav-link active-link" href="#"><i class="fa fa-home fa-sm mg-r-4"></i>
+                                        Dashboard</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link with-sub"><i class="fa fa-users"></i>Customers</a>
+                                <ul class="nav-sub">
+                                    <li class="nav-sub-item">
+                                        <a href="#" class="nav-sub-link">All Customers</a>
+                                    </li>
+                                    <li class="nav-sub-item">
+                                        <a href="#" class="nav-sub-link">High Value</a>
+                                    </li>
+                                    <li class="nav-sub-item">
+                                        <a href="#" class="nav-sub-link">Mass Market</a>
+                                    </li>
+                                    <li class="nav-sub-item">
+                                        <a href="#" class="nav-sub-link">Corporate</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <div class="top-nav-hover">
+                                    <a class="nav-link" href="#"><i class="fa fa-store"></i> Merchants</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link with-sub"><i class="fa fa-gift"></i>Reward Program</a>
+                                <ul class="nav-sub">
+                                    <li class="nav-sub-item">
+                                        <a href="#" class="nav-sub-link">All Rewards</a>
+                                    </li>
+                                    <li class="nav-sub-item">
+                                        <a href="#" class="nav-sub-link">Redeemed Rewards</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="top-nav-hover">
+                                    <a class="nav-link" href="#"><i class="fa fa-bullhorn"></i> Campaign</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="top-nav-hover">
+                                    <a class="nav-link" href="#"><i class="fa fa-cog"></i> Business Rules</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="top-nav-hover">
+                                    <a class="nav-link" href="#"><i class="fa fa-cog"></i> Levels</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="top-nav-hover">
+                                    <a class="nav-link" href="#"><i class="fa fa-cog"></i> Segments</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="top-nav-hover">
+                                    <a class="nav-link" href="#"><i class="fa fa-life-ring"></i> Support</a>
+                                </div>
+                            </li>
+
+
+                        </ul><!-- nav -->
+                    </div><!-- az-sidebar-body -->
+                </div><!-- az-sidebar -->
+
+            </div>
+            <div class="dragHandle"></div>
+        </aside>
+
+
+        <div id="mainArea">
+            <div class="az-content content">
+
+                <div class="container-fluid inner-content az-content-body-dashboard-six">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="az-content-header  d-md-flex justify-content-between">
+                                <p>Member Panel</p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-download" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                    </svg>
+                                </div>
+                            </div><!-- az-content-header -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+
+                            <!-- Content Body Starts Here -->
+                            <div class="az-content-body wrapper">
+                                <div class="row row-sm mg-b-20">
+
+                                    <div class="col-12 dashboard-section">
+                                        <section class="tx-maven">
+                                            <div class="d-flex mb-2">
+                                                <div class="col-7 pl-0">
+                                                    <p>Member Detail</p>
+                                                    <div class="col-8 member-det">
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div
+                                                                    class="d-flex justify-content-center  align-items-center imgg">
+                                                                    <img src="img/user-removebg-preview.png" width="80"
+                                                                        height="80" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col ">
+                                                                <p class="tx-15"><strong>Olubunmi Osenyi</strong></p>
+                                                                <small>olendyr</small>
+                                                                <p>Package Type: Coral</p>
+                                                                <div class=" d-flex">
+                                                                    <button type="button" class="btn btn-primaryy mr-1"
+                                                                        style="font-size: 10px;">Send
+                                                                        email</button>
+                                                                    <button type="button" class="btn btn-light"
+                                                                        style="font-size: 10px;">Send PM</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col mb-2">
+                                                                <strong>Phone</strong>
+                                                                <p>081266843399</p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <strong>Code</strong>
+                                                                <p>rkerb34yuiyfuifbubruyw</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col mb-2">
+                                                                <strong>Email</strong>
+                                                                <p>bolajimuili@gmail.com</p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <strong>Referral</strong>
+                                                                <p>43423er45</p>
+                                                            </div>
+                                                        </div>
+                                                        <strong class="mb-5">Wallet</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row mb-5">
+                                                        <div class="col">
+                                                            <strong class="tx-10">Wallet Balance</strong>
+                                                            <p class="tx-16-f"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    width="10" height="10" fill="currentColor"
+                                                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg> ₦19,800.00</p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <strong class="tx-10">Commission</strong>
+                                                            <p class="tx-16-f"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    width="10" height="10" fill="currentColor"
+                                                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg> ₦4,800.00</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-5">
+                                                        <div class="col">
+                                                            <strong class="tx-10">Earnings</strong>
+                                                            <p class="tx-16-f"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    width="10" height="10" fill="currentColor"
+                                                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg> ₦4,800.00</p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <strong class="tx-10">PV Cummulative</strong>
+                                                            <p class="tx-16-f ml-5"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                    height="10" fill="currentColor"
+                                                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg> 20</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <strong class="tx-10 ">PV monthly</strong>
+                                                            <p class="tx-16-f ml-5"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                    height="10" fill="currentColor"
+                                                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg> 0</p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <strong class="tx-10 dt">last month PV</strong>
+                                                            <p class="tx-16-f ml-5"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                    height="10" fill="currentColor"
+                                                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg> 0</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section class="container-fluid my-2 tx-maven">
+                                            <div class="table-tab">
+                                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="network-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#network" type="button"
+                                                            role="tab" aria-controls="network"
+                                                            aria-selected="true">Network</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="transaction-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#transaction"
+                                                            type="button" role="tab" aria-controls="transaction"
+                                                            aria-selected="false">Transaction</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="wallet-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#wallet" type="button" role="tab"
+                                                            aria-controls="wallet" aria-selected="false">Wallet</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="commission-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#commission"
+                                                            type="button" role="tab" aria-controls="commission"
+                                                            aria-selected="true">Commission</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="directdownlines-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#directdownlines"
+                                                            type="button" role="tab" aria-controls="directdownlines"
+                                                            aria-selected="false">Direct Downlines</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="account-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#account" type="button" role="tab"
+                                                            aria-controls="account"
+                                                            aria-selected="false">Account</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="pointvalue-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#pointvalue"
+                                                            type="button" role="tab" aria-controls="pointvalue"
+                                                            aria-selected="false">Point Value</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="changepassword-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#changepassword"
+                                                            type="button" role="tab" aria-controls="changepassword"
+                                                            aria-selected="false">Change Password</button>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="network" role="tabpanel"
+                                                        aria-labelledby="network-tab">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">S/N</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Balance</th>
+                                                                    <th scope="col">Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>2,000.00</td>
+                                                                    <td>Withdraw</td>
+                                                                    <td>Purchase of 2000 Airtel customer 0812684339</td>
+                                                                    <td>17,955.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>17,955.00</td>
+                                                                    <td>Deposit</td>
+                                                                    <td>wallet funding via bank transfer
+                                                                        Ref:eihfbceuy34u3b3ebd3bduhbd3 tru3ybyu3h3hbd3
+                                                                    </td>
+                                                                    <td>19,555.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="transaction" role="tabpanel"
+                                                        aria-labelledby="transaction-tab">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">S/N</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Balance</th>
+                                                                    <th scope="col">Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>2,000.00</td>
+                                                                    <td>Withdraw</td>
+                                                                    <td>Purchase of 2000 Airtel customer 0812684339</td>
+                                                                    <td>17,955.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>17,955.00</td>
+                                                                    <td>Deposit</td>
+                                                                    <td>wallet funding via bank transfer
+                                                                        Ref:eihfbceuy34u3b3ebd3bduhbd3 tru3ybyu3h3hbd3
+                                                                    </td>
+                                                                    <td>19,555.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="wallet" role="tabpanel"
+                                                        aria-labelledby="wallet-tab">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">S/N</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Balance</th>
+                                                                    <th scope="col">Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>2,000.00</td>
+                                                                    <td>Withdraw</td>
+                                                                    <td>Purchase of 2000 Airtel customer 0812684339</td>
+                                                                    <td>17,955.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>17,955.00</td>
+                                                                    <td>Deposit</td>
+                                                                    <td>wallet funding via bank transfer
+                                                                        Ref:eihfbceuy34u3b3ebd3bduhbd3 tru3ybyu3h3hbd3
+                                                                    </td>
+                                                                    <td>19,555.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="commission" role="tabpanel"
+                                                        aria-labelledby="commission-tab">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">S/N</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Balance</th>
+                                                                    <th scope="col">Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>2,000.00</td>
+                                                                    <td>Withdraw</td>
+                                                                    <td>Purchase of 2000 Airtel customer 0812684339</td>
+                                                                    <td>17,955.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>17,955.00</td>
+                                                                    <td>Deposit</td>
+                                                                    <td>wallet funding via bank transfer
+                                                                        Ref:eihfbceuy34u3b3ebd3bduhbd3 tru3ybyu3h3hbd3
+                                                                    </td>
+                                                                    <td>19,555.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="directdownlines" role="tabpanel"
+                                                        aria-labelledby="directdownlines-tab">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">S/N</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Balance</th>
+                                                                    <th scope="col">Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>2,000.00</td>
+                                                                    <td>Withdraw</td>
+                                                                    <td>Purchase of 2000 Airtel customer 0812684339</td>
+                                                                    <td>17,955.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>17,955.00</td>
+                                                                    <td>Deposit</td>
+                                                                    <td>wallet funding via bank transfer
+                                                                        Ref:eihfbceuy34u3b3ebd3bduhbd3 tru3ybyu3h3hbd3
+                                                                    </td>
+                                                                    <td>19,555.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="account" role="tabpanel"
+                                                        aria-labelledby="account-tab">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">S/N</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Balance</th>
+                                                                    <th scope="col">Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>2,000.00</td>
+                                                                    <td>Withdraw</td>
+                                                                    <td>Purchase of 2000 Airtel customer 0812684339</td>
+                                                                    <td>17,955.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>17,955.00</td>
+                                                                    <td>Deposit</td>
+                                                                    <td>wallet funding via bank transfer
+                                                                        Ref:eihfbceuy34u3b3ebd3bduhbd3 tru3ybyu3h3hbd3
+                                                                    </td>
+                                                                    <td>19,555.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="pointvalue" role="tabpanel"
+                                                        aria-labelledby="pointvalue-tab">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">S/N</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Balance</th>
+                                                                    <th scope="col">Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>2,000.00</td>
+                                                                    <td>Withdraw</td>
+                                                                    <td>Purchase of 2000 Airtel customer 0812684339</td>
+                                                                    <td>17,955.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>17,955.00</td>
+                                                                    <td>Deposit</td>
+                                                                    <td>wallet funding via bank transfer
+                                                                        Ref:eihfbceuy34u3b3ebd3bduhbd3 tru3ybyu3h3hbd3
+                                                                    </td>
+                                                                    <td>19,555.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="changepassword" role="tabpanel"
+                                                        aria-labelledby="changepassword-tab">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">S/N</th>
+                                                                    <th scope="col">Amount</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Balance</th>
+                                                                    <th scope="col">Date</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>2,000.00</td>
+                                                                    <td>Withdraw</td>
+                                                                    <td>Purchase of 2000 Airtel customer 0812684339</td>
+                                                                    <td>17,955.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>17,955.00</td>
+                                                                    <td>Deposit</td>
+                                                                    <td>wallet funding via bank transfer
+                                                                        Ref:eihfbceuy34u3b3ebd3bduhbd3 tru3ybyu3h3hbd3
+                                                                    </td>
+                                                                    <td>19,555.00</td>
+                                                                    <td>11-02-2021 12:00:06</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <div class="row row-sm mg-b-20">
+                                    <div class="col-xl-6">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+
+                                    </div>
+
+                                    <div class="col-lg-3">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Content Body End Here -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="az-footer ht-40">
+                    <div class="container-fluid pd-t-0-f ht-100p">
+                        <span>Chams Switch Portal </span>
+                        <span>&copy; Bluechip Technologies Limited</span>
+                    </div><!-- container -->
+                </div><!-- az-footer -->
+            </div><!-- az-content -->
+        </div>
+    </div>
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/ionicons/ionicons.js"></script>
+    <script src="./lib/jquery.flot/jquery.flot.js"></script>
+    <script src="./lib/jquery.flot/jquery.flot.pie.js"></script>
+    <script src="./lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="./lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="./lib/owl/owl.carousel.min.js"></script>
+    <script src="./js/owl.js"></script>
+    <script src="./js/chart.flot.sampledata.js"></script>
+    <script src="./js/azia.js"></script>
+    <script src="./js/dashboard.sampledata.js"></script>
+
+    <script>
+        $(function () {
+            'use strict'
+
+
+            $.plot('#flotPie', [
+                { label: 'Sub dealer count', data: [[1, 35]], color: '#025951' },
+                { label: 'Retailer count', data: [[1, 23]], color: '#038C3E' },
+                { label: 'Trade agent count', data: [[1, 42]], color: '#cddf06' }
+            ], {
+                series: {
+                    pie: {
+                        show: true,
+                        radius: 1,
+                        innerRadius: 0.6,
+                        label: {
+                            show: true,
+                            radius: 4 / 5,
+                            formatter: labelFormatter
+                        }
+                    }
+                },
+                legend: { show: false }
+            });
+
+            function labelFormatter(label, series) {
+                return '<div style="font-size:11px; font-weight:500; text-align:center; padding:2px; color:white;">' + Math.round(series.percent) + '%</div>';
+            }
+
+            $('#closeAdd').click(function () {
+                $('.card-dashboard-advert').parent().remove();
+            })
+
+            new PerfectScrollbar('.az-sidebar-body', {
+                suppressScrollX: true
+            });
+
+            let loaded = false;
+            $(window).on('load', function () {
+                loaded = true
+            });
+
+            function fadeLoader() {
+                $('.inner-bar').animate({ width: '100%' }, 300, function () {
+                    $("#preLoader").fadeOut(700, function () { $("#preLoader").remove() })
+                })
+            }
+
+            $('.inner-bar').animate({ width: '90%' }, 3000, function () {
+                if (loaded) fadeLoader();
+                else $(window).on('load', fadeLoader());
+            })
+
+            $.plot('#flotChart5', [{
+                data: dashData2,
+                color: '#025951'
+            }, {
+                data: dashData3,
+                color: '#038C3E'
+            }, {
+                data: dashData4,
+                color: '#cddf06'
+            }], {
+                series: {
+                    shadowSize: 0,
+                    lines: {
+                        show: true,
+                        lineWidth: 2,
+                        fill: false,
+                        fillColor: { colors: [{ opacity: 0 }, { opacity: 1 }] }
+                    }
+                },
+                grid: {
+                    borderWidth: 0,
+                    labelMargin: 20
+                },
+                yaxis: {
+                    show: false,
+                    min: 0,
+                    max: 100
+                },
+                xaxis: {
+                    show: true,
+                    color: 'rgba(0,0,0,.16)',
+                    ticks: [
+                        [0, ''],
+                        [10, '<span>Nov</span><span>05</span>'],
+                        [20, '<span>Nov</span><span>10</span>'],
+                        [30, '<span>Nov</span><span>15</span>'],
+                        [40, '<span>Nov</span><span>18</span>'],
+                        [50, '<span>Nov</span><span>22</span>'],
+                        [60, '<span>Nov</span><span>26</span>'],
+                        [70, '<span>Nov</span><span>30</span>'],
+                    ]
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>
