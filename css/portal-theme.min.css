@@ -250,7 +250,53 @@ p {
     margin-top: 0;
     margin-bottom: 1rem
 }
+.landingH1{
+    font-size: 50px;
+   
+}
+.ft-16{
+    font-size: 18px;
+}
+.landImage{
+    border-radius: 10px 0 0 10px;
+    width: 600px;
+    height: 400px;
+}
+.landing-Card{
+    padding: 25px;
+  
+    border-radius: 5px;
+    background-color: rgb(240, 250, 241);
+    color: #1f8a47;
+}
 
+.landing-Card2{
+    padding: 25px;
+  
+    border-radius: 5px;
+    background-color:rgb(230, 230, 230);
+   
+}
+.landing-card-body{
+    font-size: 16px;
+
+}
+.insight{
+    font-size: 50px;
+    line-height: 50px;
+}
+.resource{
+    font-size: 18px;
+    color: orangered;
+}
+.resource-box{
+    height: 100px;
+    border-top: 1px solid rgb(235, 234, 234);
+    border-bottom: 1px solid rgb(235, 234, 234);
+}
+.head-card{
+    font-size: 14px;
+}
 abbr[title],
 abbr[data-original-title] {
     text-decoration: underline;
@@ -267,7 +313,20 @@ address {
     font-style: normal;
     line-height: inherit
 }
-
+.clr-white{
+    color: white;
+    font-size: 12px;
+}
+.footer-section{
+    height: 100px;
+    border-bottom: #002219 solid 1px;
+    margin-bottom: 20px;
+}
+.w-700{
+    width: 900px;
+    font-size: 16px;
+    
+}
 ol,
 ul,
 dl {
@@ -281,7 +340,9 @@ ol ul,
 ul ol {
     margin-bottom: 0
 }
-
+ul{
+    color: white;
+}
 dt {
     font-weight: 700
 }
@@ -5077,8 +5138,8 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #22ffc7;
     border-color: #22ffc7;
-    -webkit-box-shadow: ;
-    box-shadow:
+    /* -webkit-box-shadow: ;
+    box-shadow: */
 }
 
 .custom-control-input[disabled]~.custom-control-label,
@@ -5134,8 +5195,8 @@ input[type="button"].btn-block {
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
     border-color: #1f8a47;
     background-color: #1f8a47;
-    -webkit-box-shadow: ;
-    box-shadow:
+    /* -webkit-box-shadow: ;
+    box-shadow: */
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::after {
@@ -20092,6 +20153,9 @@ textarea.parsley-success:focus {
     background: transparent;
     font-size: 10pt
 }
+.landing-sec1{
+    margin-top: 119px;
+}
 
 .wrapper #mainArea .content .az-content-header .breadcrumb .breadcrumb-item {
     opacity: 1;
@@ -22563,18 +22627,57 @@ h6 {
     font-size: 16px;
     line-height: 1
 }
-
-.top-nav {
+.footer-nav {
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    background-color: #1f8a47;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235);
+    -ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235)
+    
+}
+.top-navv {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    height: 58px;
+    height: 38px;
+    background-color: #1f8a47;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235);
+    -ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235)
+    
+}
+.top-nav {
+    position: fixed;
+    /* margin-top: 38px; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 78px;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235);
     -ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235)
+    
+}
+.top-navvv {
+    position: fixed;
+    margin-top: 38px;
+    top: 20;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 78px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235);
+    -ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.188235)
+    
 }
 
 .top-nav .top-nav-hover {
@@ -22603,6 +22706,12 @@ h6 {
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-weight: bold
+}
+.top-navv-items{
+    font-size: 12pt;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 20px;
 }
 
 .top-nav .top-nav-hover.full-btn a:hover {
@@ -34301,7 +34410,7 @@ hr {
     .az-header-dashboard-nine {
         position: fixed;
         top: 0;
-        left: calc($az-width-sidebar - 20px);
+        left: calc(az-width-sidebar - 20px);
         right: 0;
         -webkit-box-shadow: 0 0 15px rgba(28, 39, 60, 0.1);
         box-shadow: 0 0 15px rgba(28, 39, 60, 0.1)
