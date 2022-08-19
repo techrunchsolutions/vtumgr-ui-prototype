@@ -27729,7 +27729,7 @@ hr {
 .az-mail-options .btn i.typcn,
 .az-mail-options .sp-container button i.typcn,
 .sp-container .az-mail-options button i.typcn {
-    line-height: .75
+    line-height: .60
 }
 
 .az-mail-options .btn.disabled,
@@ -28813,7 +28813,7 @@ hr {
 }
 
 .az-column-signup-left .typcn {
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 50px
 }
 
@@ -31217,7 +31217,7 @@ hr {
 
 .card-dashboard-twelve .sales-overview .media-icon .typcn {
     line-height: .9;
-    font-size: 24px
+    font-size: 18px
 }
 
 .card-dashboard-twelve .sales-overview label {
